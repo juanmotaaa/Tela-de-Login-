@@ -11,10 +11,9 @@ CREATE TABLE IF NOT EXISTS usuarios (
 )
 """)
 
-# --- INSERIR USUÁRIO PADRÃO ---
 cur.execute("INSERT OR IGNORE INTO usuarios (usuario, senha) VALUES (?, ?)", ("admin", "123"))
 con.commit()
-# -------------------------------
+
 
 def adicionar_usuario(usuario, senha):
     cur.execute("INSERT INTO usuarios (usuario, senha) VALUES (?, ?)", (usuario, senha))
