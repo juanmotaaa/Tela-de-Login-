@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-import db   # ← importa o db.py
+import db  
 
 def abrir_crud(user):
     login.destroy()
